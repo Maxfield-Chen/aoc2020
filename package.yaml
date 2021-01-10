@@ -1,0 +1,27 @@
+name: aoc2020
+
+ghc-options: -Wall
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - hspec
+
+library:
+  source-dirs:
+    - src
+
+executables:
+  aoc2020:
+    main: exe/Main.hs
+    dependencies:
+      - containers
+
+dependencies:
+  - base
+  - parsec
+  - containers
+  - unordered-containers
